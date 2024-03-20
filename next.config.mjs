@@ -6,6 +6,10 @@ const nextConfig = {
 	experimental: {
 		mdxRs: true,
 	},
+	images: {
+		domains: ['media.licdn.com', 'projectimagestorage1.s3.ap-south-1.amazonaws.com', 'unkey.dev'],
+	  },
+	  
 };
 
 export default withContentlayer(nextConfig);

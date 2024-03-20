@@ -4,38 +4,151 @@ import { allProjects } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Article } from "./article";
-import { Redis } from "@upstash/redis";
 import { Eye } from "lucide-react";
 
-const redis = Redis.fromEnv();
+
+export type Project = {
+  /** File path relative to `contentDirPath` */
+  _id: number
+  published?: boolean | undefined
+  title: string
+  description: string
+  tech?: string
+  url?: string | undefined
+  repository?: string | undefined
+  imgUrl?: string | undefined
+slug: string,
+date?:string
+}
+
+export const allProjects2: Project[] = [
+  {
+    _id: 1,
+    title: 'Restraunt SaaS ',
+    description: 'A end to end software application for restraunts features include dashboard inventory CRM stock reports etc . I have also made a mobile website that can take orders and which is recvorded in admin dashboard it has three types of user login admin waiter and chef',
+    tech: 'HTML CSS JS whatsapp Api',
+    imgUrl: 'https://media.licdn.com/dms/image/D4D22AQEf2F6Q1U1Nkw/feedshare-shrink_2048_1536/0/1710760724762?e=1714003200&v=beta&t=a9tOh_iYG9L8rzvy_n2Xv3rtp2dbluLkgIIV47k16M0',
+    repository: 'https://github.com/tarunpahade/admin-app',
+    url: 'https://admin-app-ufy2.onrender.com/dashboard/',
+    slug:'saas-app',
+    date:"Feb 3, 2023"
+  },
+  {
+    _id: 2,
+    title: 'Fitness App',
+    description: 'A fitness application for beggniers in the gym .Not Published on playstore yet',
+    tech: 'React Native , Typescript , Express Node js MongoDB',
+    imgUrl: 'https://projectimagestorage1.s3.ap-south-1.amazonaws.com/images/Screenshot+2024-03-20+141916.png',
+    repository: 'https://github.com/tarunpahade/fitness-app-v2',
+    url: 'https://expo.dev/accounts/tarun.pahade/projects/fitness-app-2',
+    slug:'fitness-app-2',
+    date:"Dec 17 2023"
+
+  },
+  {
+    _id: 3,
+    title: 'Finstep',
+    description: 'A payments application .This is a payment application frontend with expo not published on playstore',
+    tech: 'React Native , Expo , Typescript , Express Node js MongoDB',
+    imgUrl: 'https://projectimagestorage1.s3.ap-south-1.amazonaws.com/images/Screenshot+2024-03-20+141906.png',
+    repository: 'https://github.com/tarunpahade/Frontend_Finstep',
+    slug:'finstep',
+    date:'Jul 17, 2023'
+  },
+  {
+    _id: 4,
+    title: "Movie-app",
+    description: "A movie app built with React and The Movie DB API You can see and search for top and trending movies",
+    tech: "React, Vite,  JavaScript",
+    repository: "https://github.com/tarunpahade/react-movie-app",
+    slug: "react-movie-app",
+    date: "2023-03-15",
+    url:'https://vite-movie-app-gilt.vercel.app/',
+    imgUrl:'https://media.licdn.com/dms/image/D4D22AQGFAMs8pxoz3A/feedshare-shrink_800/0/1710757999295?e=1714003200&v=beta&t=7FQRoQxuqq76VS08KgV3zWfM52TZWJLzyQjOfYOyZGQ'
+  },
+  {
+    _id: 4,
+    title: "Agency Site",
+    description: "A movie app built with React and The Movie DB API. You can query through all top and trending movies",
+    tech: "React, Vite,  JavaScript",
+    repository: "https://github.com/tarunpahade/react-movie-app",
+    slug: "agency-site",
+    date: "Oct 23, 2023",
+    url:'https://agency-website-pink.vercel.app/',
+    imgUrl:'https://media.licdn.com/dms/image/D4D22AQFkHVoXSSZaDA/feedshare-shrink_800/0/1710757834846?e=1714003200&v=beta&t=duf3eu9_sYQvGcsgACHAj6Tfv6rSnE7QOglvEZfaz58'
+  },
+  {
+    _id: 5,
+    title: "Insurance Site",
+    description: "A Insurance site built using wix studios",
+    tech: "Wix Studio",
+    slug: "insurance-site",
+    date: "Nov 23, 2023",
+    url:'https://tarunpahade.wixstudio.io/insuranceexamplesite',
+    imgUrl:'https://media.licdn.com/dms/image/D4D22AQEbqw4NNfVmXQ/feedshare-shrink_800/0/1710757757315?e=1714003200&v=beta&t=73Rh46vLzovFG8nuLI2pLCkX-fjUuguclh8ay9q69OI'
+  },
+  {
+    _id: 6,
+    title: "Construction Site",
+    description: "A construction site  built using wix studios",
+    tech: "Wix Studio",
+    slug: "construction-site",
+    date: "Oct 23, 2023",
+    url:'https://tarunpahade.wixstudio.io/construction',
+  },
+  
+  {
+    _id: 7,
+    title: "Simon Game",
+    description: "A memory gaminng website ",
+    tech: "Html Css Js",
+    slug: "memory-game",
+    date: "Sept 23, 2023",
+    url:'https://memory-game-cflm.onrender.com/',
+    imgUrl:'https://media.licdn.com/dms/image/D5622AQHY97O1Qou1SA/feedshare-shrink_800/0/1684429094801?e=1714003200&v=beta&t=FhNiGRqhiommu57d-IvZD9DGsx-UVrI0Io3q_hMLSXo'
+  },
+  
+  {
+    _id: 7,
+    title: "Spotify Clone",
+    description: "A Mobile responsive clone of Spotify ",
+    tech: "Html Css Js",
+    slug: "spotify",
+    date: "feb 23, 2022",
+    url:'https://spotify-htvz.onrender.com/',
+    imgUrl:'https://media.licdn.com/dms/image/D5622AQFLoBnYuLS4Sg/feedshare-shrink_800/0/1682276689191?e=1714003200&v=beta&t=qqrK42dkoDqPSHQS9ya7CFD2zt291oVvnhxt7T0RCUY'
+  },
+  
+  
+]
+
 
 export const revalidate = 60;
 export default async function ProjectsPage() {
-  const views = (
-    await redis.mget<number[]>(
-      ...allProjects.map((p) => ["pageviews", "projects", p.slug].join(":")),
-    )
-  ).reduce((acc, v, i) => {
-    acc[allProjects[i].slug] = v ?? 0;
-    return acc;
-  }, {} as Record<string, number>);
-
-  const featured = allProjects.find((project) => project.slug === "unkey")!;
-  const top2 = allProjects.find((project) => project.slug === "planetfall")!;
-  const top3 = allProjects.find((project) => project.slug === "highstorm")!;
-  const sorted = allProjects
-    .filter((p) => p.published)
+  const featured = allProjects2.find((project) => project.slug === "saas-app")!;
+  const top2 = allProjects2.find((project) => project.slug === "fitness-app-2")!;
+  const top3 = allProjects2.find((project) => project.slug === "finstep")!;
+  console.log(featured,top2,top3,'this is ');
+  
+  const sorted = allProjects2
     .filter(
       (project) =>
         project.slug !== featured.slug &&
         project.slug !== top2.slug &&
         project.slug !== top3.slug,
     )
-    .sort(
-      (a, b) =>
-        new Date(b.date ?? Number.POSITIVE_INFINITY).getTime() -
-        new Date(a.date ?? Number.POSITIVE_INFINITY).getTime(),
-    );
+    // .sort(
+    //   (a, b) =>
+    //     new Date(b.date ?? Number.POSITIVE_INFINITY).getTime() -
+    //     new Date(a.date ?? Number.POSITIVE_INFINITY).getTime(),
+    // );
+    console.log(sorted,'this is sorted');
+    
+  const views = allProjects.reduce<Record<string, number>>((acc, project) => {
+    acc[project.slug] = Math.floor(Math.random() * 1000); // Random view count for demo
+    return acc;
+  }, {});
+
 
   return (
     <div className="relative pb-16">

@@ -1,10 +1,9 @@
 import "../global.css";
 import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
-import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: {
     default: "chronark.com",
     template: "%s | chronark.com",
@@ -57,8 +56,6 @@ const calSans = LocalFont({
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
 }) {
   return (
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
