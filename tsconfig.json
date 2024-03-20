@@ -26,6 +26,6 @@
 
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/contact/page.jsx", "app/layout.jsx", "app/skills/page.jsx", "components/ui/carousel.jsx", "components/ui/button.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/contact/page.jsx", "app/layout.jsx", "app/skills/page.tsx", "components/ui/carousel.jsx", "components/ui/button.jsx"],
   "exclude": ["node_modules"]
 }

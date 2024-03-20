@@ -2,30 +2,8 @@
 import { Code } from "lucide-react";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-  } from "@/components/ui/carousel"
-   
+
 const socials = [
-	{
-		icon: <Code size={20} />,
-		label: "Twitter",
-		handle: "@TarunPahade",
-	},
-	{
-		icon: <Code size={20} />,
-		label: "Email",
-		handle: "tarunpahade55@gmail.com",
-	},
-	{
-		icon: <Code size={20} />,
-		label: "Github",
-		handle: "Tarun",
-	},
 	{
 		icon: <Code size={20} />,
 		label: "Twitter",
@@ -44,25 +22,27 @@ const socials = [
 ];
 
 export default function Example() {
-	const plugin = React.useRef(
-		Autoplay({ delay: 2000, stopOnInteraction: true })
-	  )
+
 	return (
 		<div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
 			<Navigation />
-			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
+			<div className="relative pt-20 max-w-2xl pb-0 mx-auto lg:mx-0 w-full text-center ml-[20%] md:ml-[10%] ml-[0%] ">
+				<h2 className="text-3xl font-bold pl-5 pb-0 mb-0 tracking-tight text-zinc-100 sm:text-4xl">
+					Skills
+				</h2>
+				<p className="mt-2 text-zinc-400 pl-5 ">
+					All My Skills
+				</p>
+			</div>
+
+			<div className="container mt-5 flex items-center justify-center min-h-min px-4 mx-auto">
+
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
-				<Carousel
-      plugins={[plugin.current]}
-      className="w-full max-w-xs"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
-    >
-      <CarouselContent>
+
 					{socials.map((s) => (
 						<Card>
 							<div
-							
+
 								className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
 							>
 								<span
@@ -83,10 +63,6 @@ export default function Example() {
 							</div>
 						</Card>
 					))}
-					</CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
 				</div>
 			</div>
 		</div>
