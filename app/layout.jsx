@@ -1,20 +1,19 @@
 import "../global.css";
-import { Inter } from "@next/font/google";
-import LocalFont from "@next/font/local";
+import { Inter } from "next/font/google";
+import LocalFont from "next/font/local";
 import { Analytics } from "./components/analytics";
 
 export const metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "Tarun Pahade",
   },
   description: "Co-founder of unkey.dev and founder of planetfall.io",
   openGraph: {
-    title: "chronark.com",
+    title: "my-portfolio.com",
     description:
       "Co-founder of unkey.dev and founder of planetfall.io",
     url: "https://chronark.com",
-    siteName: "chronark.com",
+    siteName: "my-portfolio.com",
     images: [
       {
         url: "https://chronark.com/og.png",
@@ -37,7 +36,7 @@ export const metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "tarun",
     card: "summary_large_image",
   },
   icons: {
