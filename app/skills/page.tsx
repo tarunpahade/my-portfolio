@@ -26,7 +26,7 @@ export default function Example() {
 	return (
 		<div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
 			<Navigation />
-			<div className="relative pt-20 max-w-2xl pb-0 mx-auto lg:mx-0 w-full text-center ml-[20%] md:ml-[10%] ml-[0%] ">
+			<div className="relative pt-20 max-w-2xl pb-0 mx-auto lg:mx-0 w-full text-center lg:ml-[20%]  md:ml-[10%] ml-[0%] ">
 				<h2 className="text-3xl font-bold pl-5 pb-0 mb-0 tracking-tight text-zinc-100 sm:text-4xl">
 					Skills
 				</h2>
