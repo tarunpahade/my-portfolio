@@ -1,40 +1,31 @@
 "use client";
-import { Code } from "lucide-react";
+import { Code, CodeIcon, PhoneCall } from "lucide-react";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 
 const socials = [
 	{
 		icon: <Code size={20} />,
-		label: "Twitter",
-		handle: "@TarunPahade",
+		label: "Mobile Developnment",
+		description: "Crsoo Platform Developnment With Expo and React Native",
 	},
 	{
-		icon: <Code size={20} />,
-		label: "Email",
-		handle: "tarunpahade55@gmail.com",
+		icon: <CodeIcon size={20} />,
+		label: "Web Developnment",
+		description: "Next Js , MERN stack , Hosting , SEO , HTML CSS JS",
 	},
 	{
-		icon: <Code size={20} />,
-		label: "Github",
-		handle: "Tarun",
+		icon: <PhoneCall size={20} />,
+		label: "Sales",
+		description: "Cold Calls Cold outreach ,Customer Feedback ",
 	},
 ];
 
 export default function Example() {
 
 	return (
-		<div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
+		<div className=" bg-gradient-to-tl pt-20 from-zinc-900/0 via-zinc-900 to-zinc-900/0">
 			<Navigation />
-			<div className="relative pt-20 max-w-2xl pb-0 mx-auto lg:mx-0 w-full text-center lg:ml-[20%]  md:ml-[10%] ml-[0%] ">
-				<h2 className="text-3xl font-bold pl-5 pb-0 mb-0 tracking-tight text-zinc-100 sm:text-4xl">
-					Skills
-				</h2>
-				<p className="mt-2 text-zinc-400 pl-5 ">
-					All My Skills
-				</p>
-			</div>
-
 			<div className="container mt-5 flex items-center justify-center min-h-min px-4 mx-auto">
 
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
@@ -54,10 +45,10 @@ export default function Example() {
 								</span>{" "}
 								<div className="z-10 flex flex-col items-center">
 									<span className="lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display">
-										{s.handle}
+									{s.label}
 									</span>
 									<span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
-										{s.label}
+									{s.description}
 									</span>
 								</div>
 							</div>

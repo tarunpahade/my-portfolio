@@ -20,12 +20,37 @@ export type Project = {
 slug: string,
 date?:string
 }
+//
 
 export const allProjects2: Project[] = [
   {
     _id: 1,
+    title: 'Educator AI',
+    description: `This product is pre-pmf (product market fit) . The primary idea was it 
+    basically checks your assignments first it was coding now shifting to theory assignments 
+    Now it is evolving into platform for students to get their first internship/job`,
+    tech: 'Next js  , tailwins , Shad cn  , MongoDB ',
+    imgUrl: 'https://projectimagestorage1.s3.ap-south-1.amazonaws.com/images/Screenshot+2024-03-21+091902.png',
+    repository: 'https://github.com/tarunpahade/assignment-autochecker/',
+    slug:'student-lms',
+    date:'Jul 17, 2023',
+    url:'https://educator-ai.vercel.app/'
+  },
+ 
+  {
+    _id: 2,
+    title: 'Finstep',
+    description: 'I was building a Neobank for age group 14-18 years. I got unlucky here with this startup the space died even before uploading to playstore',
+    tech: 'React Native , Expo , Typescript , Express Node js MongoDB',
+    imgUrl: 'https://projectimagestorage1.s3.ap-south-1.amazonaws.com/images/Screenshot+2024-03-20+141906.png',
+    repository: 'https://github.com/tarunpahade/Frontend_Finstep',
+    slug:'finstep',
+    date:'Jul 17, 2023'
+  },
+  {
+    _id: 3,
     title: 'Restraunt SaaS ',
-    description: 'A end to end software application for restraunts features include dashboard inventory CRM stock reports etc . I have also made a mobile website that can take orders and which is recvorded in admin dashboard it has three types of user login admin waiter and chef',
+    description: 'I started a restraunt SaaS startup in jan 2020 later realised the markert is too saturated to even get started ',
     tech: 'HTML CSS JS whatsapp Api',
     imgUrl: 'https://media.licdn.com/dms/image/D4D22AQEf2F6Q1U1Nkw/feedshare-shrink_2048_1536/0/1710760724762?e=1714003200&v=beta&t=a9tOh_iYG9L8rzvy_n2Xv3rtp2dbluLkgIIV47k16M0',
     repository: 'https://github.com/tarunpahade/admin-app',
@@ -33,10 +58,11 @@ export const allProjects2: Project[] = [
     slug:'saas-app',
     date:"Feb 3, 2023"
   },
+  
   {
-    _id: 2,
+    _id: 4,
     title: 'Fitness App',
-    description: 'A fitness application for beggniers in the gym .Not Published on playstore yet',
+    description: 'A fitness application for beggniers in the gym . Not Published on playstore yet',
     tech: 'React Native , Typescript , Express Node js MongoDB',
     imgUrl: 'https://projectimagestorage1.s3.ap-south-1.amazonaws.com/images/Screenshot+2024-03-20+141916.png',
     repository: 'https://github.com/tarunpahade/fitness-app-v2',
@@ -44,16 +70,6 @@ export const allProjects2: Project[] = [
     slug:'fitness-app-2',
     date:"Dec 17 2023"
 
-  },
-  {
-    _id: 3,
-    title: 'Finstep',
-    description: 'A payments application .This is a payment application frontend with expo not published on playstore',
-    tech: 'React Native , Expo , Typescript , Express Node js MongoDB',
-    imgUrl: 'https://projectimagestorage1.s3.ap-south-1.amazonaws.com/images/Screenshot+2024-03-20+141906.png',
-    repository: 'https://github.com/tarunpahade/Frontend_Finstep',
-    slug:'finstep',
-    date:'Jul 17, 2023'
   },
   {
     _id: 4,
@@ -125,10 +141,9 @@ export const allProjects2: Project[] = [
 
 export const revalidate = 60;
 export default async function ProjectsPage() {
-  const featured = allProjects2.find((project) => project.slug === "saas-app")!;
-  const top2 = allProjects2.find((project) => project.slug === "fitness-app-2")!;
-  const top3 = allProjects2.find((project) => project.slug === "finstep")!;
-  console.log(featured,top2,top3,'this is ');
+  const featured = allProjects2.find((project) => project.slug === "student-lms")!;
+  const top2 = allProjects2.find((project) => project.slug === "finstep")!;
+  const top3 = allProjects2.find((project) => project.slug === "saas-app")!;
   
   const sorted = allProjects2
     .filter(

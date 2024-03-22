@@ -7,11 +7,11 @@ export const metadata = {
   title: {
     default: "Tarun Pahade",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "founder of Educator AI",
   openGraph: {
     title: "my-portfolio.com",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
+      "founder of Educator AI",
     url: "https://chronark.com",
     siteName: "my-portfolio.com",
     images: [
