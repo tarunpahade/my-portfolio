@@ -26,9 +26,7 @@ export const allProjects2: Project[] = [
   {
     _id: 1,
     title: 'Educator AI',
-    description: `This product is pre-pmf (product market fit) . The primary idea was it 
-    basically checks your assignments first it was coding now shifting to theory assignments 
-    Now it is evolving into platform for students to get their first internship/job`,
+    description: `A platform for students to learn coding by doing and with in built ai  assistant . A AI leetcode`,
     tech: 'Next js  , tailwins , Shad cn  , MongoDB ',
     imgUrl: 'https://projectimagestorage1.s3.ap-south-1.amazonaws.com/images/Screenshot+2024-03-21+091902.png',
     repository: 'https://github.com/tarunpahade/assignment-autochecker/',
@@ -40,7 +38,7 @@ export const allProjects2: Project[] = [
   {
     _id: 2,
     title: 'Finstep',
-    description: 'I was building a Neobank for age group 14-18 years. I got unlucky here with this startup the space died even before uploading to playstore',
+    description: 'I was building Frontend a Neobank for age group 14-18 years. ',
     tech: 'React Native , Expo , Typescript , Express Node js MongoDB',
     imgUrl: 'https://projectimagestorage1.s3.ap-south-1.amazonaws.com/images/Screenshot+2024-03-20+141906.png',
     repository: 'https://github.com/tarunpahade/Frontend_Finstep',
@@ -50,7 +48,7 @@ export const allProjects2: Project[] = [
   {
     _id: 3,
     title: 'Restraunt SaaS ',
-    description: 'I started a restraunt SaaS startup in jan 2020 later realised the markert is too saturated to even get started ',
+    description: 'A restraunt SAAS integra',
     tech: 'HTML CSS JS whatsapp Api',
     imgUrl: 'https://media.licdn.com/dms/image/D4D22AQEf2F6Q1U1Nkw/feedshare-shrink_2048_1536/0/1710760724762?e=1714003200&v=beta&t=a9tOh_iYG9L8rzvy_n2Xv3rtp2dbluLkgIIV47k16M0',
     repository: 'https://github.com/tarunpahade/admin-app',
