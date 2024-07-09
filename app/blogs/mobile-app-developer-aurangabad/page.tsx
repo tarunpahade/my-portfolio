@@ -37,17 +37,17 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  twitter: {
-    title: "Expert Mobile App Developer in Aurangabad | Tarun Pahade",
-    card: "summary_large_image",
-  },
+//   twitter: {
+//     title: "Expert Mobile App Developer in Aurangabad | Tarun Pahade",
+//     card: "summary_large_image",
+//   },
   icons: {
     shortcut: "/favicon.png",
   },
 };
-const MobileAppDeveloperAurangabad = () => {
+export function MobileAppDeveloperAurangabad  ()  {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="p-20  mx-auto px-52 py-8 bg-white w-screen">
       <Head>
         <title>Expert Mobile App Developer in Aurangabad | Tarun Pahade</title>
         <meta name="description" content="Looking for a skilled mobile app developer in Aurangabad? Tarun Pahade offers expertise in React Native and cross-platform app development. Bring your app ideas to life!" />
@@ -133,5 +133,3 @@ const MobileAppDeveloperAurangabad = () => {
     </div>
   );
 };
-
-export default MobileAppDeveloperAurangabad;

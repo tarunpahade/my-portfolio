@@ -45,9 +45,9 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
   },
 };
-const HireDeveloperForStartup = () => {
+export function HireDeveloperForStartup  ()  {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="p-20  mx-auto px-52 py-8 bg-white w-screen">
       <Head>
         <title>Hire a Top Developer for Your Startup | Tarun Pahade</title>
         <meta name="description" content="Looking to hire a developer for your startup? Tarun Pahade offers full-stack expertise, from web to mobile app development. Perfect for startups in Aurangabad and beyond." />
@@ -122,5 +122,3 @@ const HireDeveloperForStartup = () => {
     </div>
   );
 };
-
-export default HireDeveloperForStartup;

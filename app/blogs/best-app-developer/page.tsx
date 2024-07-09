@@ -25,7 +25,8 @@ export const metadata: Metadata = {
     ],
     locale: "en-IN",
     type: "website",
-  },
+  }
+  ,
   robots: {
     index: true,
     follow: true,
@@ -45,9 +46,9 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
   },
 };
-const BestAppDeveloper = () => {
+export default function BestAppDeveloper () {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="p-20  mx-auto px-52 py-8 bg-white w-screen">
       <Head>
         <title>Tarun Pahade: Best App Developer in Aurangabad | Full Stack Expert</title>
         <meta name="description" content="Discover why Tarun Pahade is the best app developer in Aurangabad. Expertise in MERN stack, React Native, and cutting-edge web technologies." />
@@ -121,5 +122,3 @@ const BestAppDeveloper = () => {
     </div>
   );
 };
-
-export default BestAppDeveloper;

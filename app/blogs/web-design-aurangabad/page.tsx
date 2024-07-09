@@ -7,18 +7,18 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Expert Web Development Services in Aurangabad | Tarun Pahade",
-    template: "%s | Tarun Pahade - Web Developer"
+    default: "Professional Web Design Services in Aurangabad | Tarun Pahade",
+    template: "%s | Tarun Pahade - Web Designer"
   },
-  description: "Need professional web development in Aurangabad? Tarun Pahade offers full-stack web development services using cutting-edge technologies like React, Next.js, and MERN stack.",
+  description: "Looking for expert web design in Aurangabad? Tarun Pahade offers modern, responsive, and user-friendly web design services tailored to your business needs.",
   openGraph: {
-    title: "Expert Web Development Services in Aurangabad - Tarun Pahade",
-    description: "Elevate your online presence with professional web development. Tarun Pahade specializes in creating powerful, scalable web applications in Aurangabad.",
-    url: "https://my-portfolio-tarunpahade.vercel.app/blogs/web-development-aurangabad",
+    title: "Professional Web Design Services in Aurangabad - Tarun Pahade",
+    description: "Transform your online presence with stunning web designs. Tarun Pahade specializes in creating modern, responsive websites in Aurangabad.",
+    url: "https://my-portfolio-tarunpahade.vercel.app/blogs/web-design-aurangabad",
     siteName: "Tarun Pahade - Portfolio",
     // images: [
     //   {
-    //     url: "https://my-portfolio-tarunpahade.vercel.app/og-image-web-development.png",
+    //     url: "https://my-portfolio-tarunpahade.vercel.app/og-image-web-design.png",
     //     width: 1200,
     //     height: 630,
     //   },
@@ -37,17 +37,17 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  twitter: {
-    title: "Expert Web Development Services in Aurangabad | Tarun Pahade",
-    card: "summary_large_image",
-  },
+//   twitter: {
+//     title: "Professional Web Design Services in Aurangabad | Tarun Pahade",
+//     card: "summary_large_image",
+//   },
   icons: {
     shortcut: "/favicon.png",
   },
 };
-const WebDevelopmentAurangabad = () => {
+export function WebDevelopmentAurangabad  ()  {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="p-20  mx-auto px-52 py-8 bg-white w-screen">
       <Head>
         <title>Expert Web Development Services in Aurangabad | Tarun Pahade</title>
         <meta name="description" content="Need professional web development in Aurangabad? Tarun Pahade offers full-stack web development services using cutting-edge technologies like React, Next.js, and MERN stack." />
@@ -137,5 +137,3 @@ const WebDevelopmentAurangabad = () => {
     </div>
   );
 };
-
-export default WebDevelopmentAurangabad;

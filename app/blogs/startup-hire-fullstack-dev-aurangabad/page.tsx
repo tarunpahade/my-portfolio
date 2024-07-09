@@ -10,19 +10,20 @@ export const metadata: Metadata = {
     default: "Hire Top Fullstack Developer for Your Startup in Aurangabad | Tarun Pahade",
     template: "%s | Tarun Pahade - Fullstack Developer for Startups"
   },
-  description: "Startups in Aurangabad: Hire Tarun Pahade, an experienced fullstack developer with expertise in MERN stack, React Native, and modern web technologies. Boost your startup's tech capabilities!",
-  openGraph: {
-    title: "Hire Top Fullstack Developer for Startups in Aurangabad - Tarun Pahade",
-    description: "Elevate your startup with expert fullstack development. Tarun Pahade offers comprehensive tech solutions for startups in Aurangabad.",
-    url: "https://my-portfolio-tarunpahade.vercel.app/blogs/startup-hire-fullstack-dev-aurangabad",
-    siteName: "Tarun Pahade - Portfolio",
-    // images: [
+//   ,images: [
     //   {
     //     url: "https://my-portfolio-tarunpahade.vercel.app/og-image-fullstack-developer-startup.png",
     //     width: 1200,
     //     height: 630,
     //   },
     // ],
+  description: "Startups in Aurangabad: Hire Tarun Pahade, an experienced fullstack developer with expertise in MERN stack, React Native, and modern web technologies. Boost your startup's tech capabilities!",
+  openGraph: {
+    title: "Hire Top Fullstack Developer for Startups in Aurangabad - Tarun Pahade",
+    description: "Elevate your startup with expert fullstack development. Tarun Pahade offers comprehensive tech solutions for startups in Aurangabad.",
+    url: "https://my-portfolio-tarunpahade.vercel.app/blogs/startup-hire-fullstack-dev-aurangabad",
+    siteName: "Tarun Pahade - Portfolio",
+    // 
     locale: "en-IN",
     type: "website",
   },
@@ -37,17 +38,17 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  twitter: {
-    title: "Hire Top Fullstack Developer for Startups in Aurangabad | Tarun Pahade",
-    card: "summary_large_image",
-  },
+//   twitter: {
+//     title: "Hire Top Fullstack Developer for Startups in Aurangabad | Tarun Pahade",
+//     card: "summary_large_image",
+//   },
   icons: {
     shortcut: "/favicon.png",
   },
 };
-const StartupHireFullstackDevAurangabad = () => {
+export function StartupHireFullstackDevAurangabad ()  {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="p-20  mx-auto px-52 py-8 bg-white w-screen">
       <Head>
         <title>Hire Top Fullstack Developer for Your Startup in Aurangabad | Tarun Pahade</title>
         <meta name="description" content="Startups in Aurangabad: Hire Tarun Pahade, an experienced fullstack developer with expertise in MERN stack, React Native, and modern web technologies. Boost your startup's tech capabilities!" />
@@ -135,5 +136,3 @@ const StartupHireFullstackDevAurangabad = () => {
     </div>
   );
 };
-
-export default StartupHireFullstackDevAurangabad;
