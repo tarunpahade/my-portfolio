@@ -12,7 +12,7 @@ export const metadata = {
     title: "my-portfolio.com",
     description:
       "founder of Educator AI",
-    url: "https://chronark.com",
+    url: "https://my-portfolio-tarunpahade.vercel.app/",
     siteName: "my-portfolio.com",
     images: [
       {
