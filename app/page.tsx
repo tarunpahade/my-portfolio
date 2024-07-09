@@ -14,6 +14,7 @@ export default function Home() {
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item) => (
+            <li>
             <Link
               key={item.href}
               href={item.href}
@@ -21,6 +22,7 @@ export default function Home() {
             >
               {item.name}
             </Link>
+            </li>
           ))}
         </ul>
       </nav>
