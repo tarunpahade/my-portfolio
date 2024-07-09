@@ -6,46 +6,44 @@ import Link from 'next/link';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Professional Web Design Services in Aurangabad | Tarun Pahade",
-    template: "%s | Tarun Pahade - Web Designer"
-  },
+  title:  "Professional Web Design Services in Aurangabad | Tarun Pahade",
+
   description: "Looking for expert web design in Aurangabad? Tarun Pahade offers modern, responsive, and user-friendly web design services tailored to your business needs.",
-  openGraph: {
-    title: "Professional Web Design Services in Aurangabad - Tarun Pahade",
-    description: "Transform your online presence with stunning web designs. Tarun Pahade specializes in creating modern, responsive websites in Aurangabad.",
-    url: "https://my-portfolio-tarunpahade.vercel.app/blogs/web-design-aurangabad",
-    siteName: "Tarun Pahade - Portfolio",
-    // images: [
-    //   {
-    //     url: "https://my-portfolio-tarunpahade.vercel.app/og-image-web-design.png",
-    //     width: 1200,
-    //     height: 630,
-    //   },
-    // ],
-    locale: "en-IN",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-//   twitter: {
-//     title: "Professional Web Design Services in Aurangabad | Tarun Pahade",
-//     card: "summary_large_image",
+//   openGraph: {
+//     title: "Professional Web Design Services in Aurangabad - Tarun Pahade",
+//     description: "Transform your online presence with stunning web designs. Tarun Pahade specializes in creating modern, responsive websites in Aurangabad.",
+//     url: "https://my-portfolio-tarunpahade.vercel.app/blogs/web-design-aurangabad",
+//     siteName: "Tarun Pahade - Portfolio",
+//     // images: [
+//     //   {
+//     //     url: "https://my-portfolio-tarunpahade.vercel.app/og-image-web-design.png",
+//     //     width: 1200,
+//     //     height: 630,
+//     //   },
+//     // ],
+//     locale: "en-IN",
+//     type: "website",
 //   },
-  icons: {
-    shortcut: "/favicon.png",
-  },
+//   robots: {
+//     index: true,
+//     follow: true,
+//     googleBot: {
+//       index: true,
+//       follow: true,
+//       "max-video-preview": -1,
+//       "max-image-preview": "large",
+//       "max-snippet": -1,
+//     },
+//   },
+// //   twitter: {
+// //     title: "Professional Web Design Services in Aurangabad | Tarun Pahade",
+// //     card: "summary_large_image",
+// //   },
+//   icons: {
+//     shortcut: "/favicon.png",
+//   },
 };
-export function WebDevelopmentAurangabad  ()  {
+export default  function WebDevelopmentAurangabad  ()  {
   return (
     <div className="p-20  mx-auto px-52 py-8 bg-white w-screen">
       <Head>

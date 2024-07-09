@@ -5,46 +5,43 @@ import Link from 'next/link';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Expert Web Development Services in Aurangabad | Tarun Pahade",
-    template: "%s | Tarun Pahade - Web Developer"
-  },
+  title: "Expert Web Development Services in Aurangabad | Tarun Pahade",
   description: "Need professional web development in Aurangabad? Tarun Pahade offers full-stack web development services using cutting-edge technologies like React, Next.js, and MERN stack.",
-  openGraph: {
-    title: "Expert Web Development Services in Aurangabad - Tarun Pahade",
-    description: "Elevate your online presence with professional web development. Tarun Pahade specializes in creating powerful, scalable web applications in Aurangabad.",
-    url: "https://my-portfolio-tarunpahade.vercel.app/blogs/web-development-aurangabad",
-    siteName: "Tarun Pahade - Portfolio",
-    // images: [
-    //   {
-    //     url: "https://my-portfolio-tarunpahade.vercel.app/og-image-web-development.png",
-    //     width: 1200,
-    //     height: 630,
-    //   },
-    // ],
-    locale: "en-IN",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-//   twitter: {
-//     title: "Expert Web Development Services in Aurangabad | Tarun Pahade",
-//     card: "summary_large_image",
+//   openGraph: {
+//     title: "Expert Web Development Services in Aurangabad - Tarun Pahade",
+//     description: "Elevate your online presence with professional web development. Tarun Pahade specializes in creating powerful, scalable web applications in Aurangabad.",
+//     url: "https://my-portfolio-tarunpahade.vercel.app/blogs/web-development-aurangabad",
+//     siteName: "Tarun Pahade - Portfolio",
+//     // images: [
+//     //   {
+//     //     url: "https://my-portfolio-tarunpahade.vercel.app/og-image-web-development.png",
+//     //     width: 1200,
+//     //     height: 630,
+//     //   },
+//     // ],
+//     locale: "en-IN",
+//     type: "website",
 //   },
-  icons: {
-    shortcut: "/favicon.png",
-  },
+//   robots: {
+//     index: true,
+//     follow: true,
+//     googleBot: {
+//       index: true,
+//       follow: true,
+//       "max-video-preview": -1,
+//       "max-image-preview": "large",
+//       "max-snippet": -1,
+//     },
+//   },
+// //   twitter: {
+// //     title: "Expert Web Development Services in Aurangabad | Tarun Pahade",
+// //     card: "summary_large_image",
+// //   },
+//   icons: {
+//     shortcut: "/favicon.png",
+//   },
 };
-export function WebDevelopmentAurangabad  ()  {
+export default function WebDevelopmentAurangabad  ()  {
   return (
     <div className="p-20  mx-auto px-52 py-8 bg-white w-screen">
       <Head>
@@ -137,4 +134,3 @@ export function WebDevelopmentAurangabad  ()  {
   );
 };
 
-export default WebDevelopmentAurangabad;

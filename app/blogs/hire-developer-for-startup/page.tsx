@@ -6,46 +6,44 @@ import Link from 'next/link';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Hire Top Developer for Your Startup | Tarun Pahade",
-    template: "%s | Tarun Pahade - Startup Developer"
-  },
-  description: "Looking to hire a developer for your startup? Tarun Pahade offers full-stack expertise, from web to mobile app development. Perfect for startups in Aurangabad and beyond.",
-  openGraph: {
-    title: "Hire Top Developer for Your Startup - Tarun Pahade",
-    description: "Boost your startup with expert development services. Tarun Pahade offers full-stack development tailored for startups.",
-    url: "https://my-portfolio-tarunpahade.vercel.app/blogs/hire-developer-for-startup",
-    siteName: "Tarun Pahade - Portfolio",
-    // images: [
-    //   {
-    //     url: "https://my-portfolio-tarunpahade.vercel.app/og-image-startup-developer.png",
-    //     width: 1200,
-    //     height: 630,
-    //   },
-    // ],
-    locale: "en-IN",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  twitter: {
-    title: "Hire Top Developer for Your Startup | Tarun Pahade",
-    card: "summary_large_image",
-  },
-  icons: {
-    shortcut: "/favicon.png",
-  },
+  title: "Hire Top Developer for Your Startup | Tarun Pahade",
+
+   description: "Looking to hire a developer for your startup? Tarun Pahade offers full-stack expertise, from web to mobile app development. Perfect for startups in Aurangabad and beyond."
+  // openGraph: {
+  //   title: "Hire Top Developer for Your Startup - Tarun Pahade",
+  //   description: "Boost your startup with expert development services. Tarun Pahade offers full-stack development tailored for startups.",
+  //   url: "https://my-portfolio-tarunpahade.vercel.app/blogs/hire-developer-for-startup",
+  //   siteName: "Tarun Pahade - Portfolio",
+  //   // images: [
+  //   //   {
+  //   //     url: "https://my-portfolio-tarunpahade.vercel.app/og-image-startup-developer.png",
+  //   //     width: 1200,
+  //   //     height: 630,
+  //   //   },
+  //   // ],
+  //   locale: "en-IN",
+  //   type: "website",
+  // },
+  // robots: {
+  //   index: true,
+  //   follow: true,
+  //   googleBot: {
+  //     index: true,
+  //     follow: true,
+  //     "max-video-preview": -1,
+  //     "max-image-preview": "large",
+  //     "max-snippet": -1,
+  //   },
+  // },
+  // twitter: {
+  //   title: "Hire Top Developer for Your Startup | Tarun Pahade",
+  //   card: "summary_large_image",
+  // },
+  // icons: {
+  //   shortcut: "/favicon.png",
+  // },
 };
-export function HireDeveloperForStartup  ()  {
+export default function HireDeveloperForStartup  ()  {
   return (
     <div className="p-20  mx-auto px-52 py-8 bg-white w-screen">
       <Head>

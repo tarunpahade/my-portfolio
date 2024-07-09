@@ -6,45 +6,42 @@ import Link from 'next/link';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Best App Developer in Aurangabad | Tarun Pahade",
-    template: "%s | Tarun Pahade - App Developer"
-  },
+  title: "Best App Developer in Aurangabad | Tarun Pahade",
   description: "Discover why Tarun Pahade is the best app developer in Aurangabad. Expertise in MERN stack, React Native, and cutting-edge web technologies.",
-  openGraph: {
-    title: "Best App Developer in Aurangabad - Tarun Pahade",
-    description: "Looking for the top app developer in Aurangabad? Tarun Pahade offers expert app development services with a focus on modern technologies.",
-    url: "https://my-portfolio-tarunpahade.vercel.app/blogs/best-app-developer",
-    siteName: "Tarun Pahade - Portfolio",
-    images: [
-      {
-        url: "https://my-portfolio-tarunpahade.vercel.app/og-image-app-developer.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: "en-IN",
-    type: "website",
-  }
-  ,
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  twitter: {
-    title: "Best App Developer in Aurangabad | Tarun Pahade",
-    card: "summary_large_image",
-  },
-  icons: {
-    shortcut: "/favicon.png",
-  },
+  // openGraph: {
+  //   title: "Best App Developer in Aurangabad - Tarun Pahade",
+  //   description: "Looking for the top app developer in Aurangabad? Tarun Pahade offers expert app development services with a focus on modern technologies.",
+  //   url: "https://my-portfolio-tarunpahade.vercel.app/blogs/best-app-developer",
+  //   siteName: "Tarun Pahade - Portfolio",
+  //   images: [
+  //     {
+  //       url: "https://my-portfolio-tarunpahade.vercel.app/og-image-app-developer.png",
+  //       width: 1200,
+  //       height: 630,
+  //     },
+  //   ],
+  //   locale: "en-IN",
+  //   type: "website",
+  // }
+  // ,
+  // robots: {
+  //   index: true,
+  //   follow: true,
+  //   googleBot: {
+  //     index: true,
+  //     follow: true,
+  //     "max-video-preview": -1,
+  //     "max-image-preview": "large",
+  //     "max-snippet": -1,
+  //   },
+  // },
+  // twitter: {
+  //   title: "Best App Developer in Aurangabad | Tarun Pahade",
+  //   card: "summary_large_image",
+  // },
+  // icons: {
+  //   shortcut: "/favicon.png",
+  // },
 };
 export default function BestAppDeveloper () {
   return (

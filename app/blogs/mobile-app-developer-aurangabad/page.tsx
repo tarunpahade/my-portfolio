@@ -6,46 +6,44 @@ import Link from 'next/link';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Expert Mobile App Developer in Aurangabad | Tarun Pahade",
-    template: "%s | Tarun Pahade - Mobile App Developer"
-  },
+  title: "Expert Mobile App Developer in Aurangabad | Tarun Pahade",
+
   description: "Looking for a skilled mobile app developer in Aurangabad? Tarun Pahade offers expertise in React Native and cross-platform app development. Bring your app ideas to life!",
-  openGraph: {
-    title: "Expert Mobile App Developer in Aurangabad - Tarun Pahade",
-    description: "Transform your ideas into powerful mobile apps. Tarun Pahade specializes in React Native and cross-platform development in Aurangabad.",
-    url: "https://my-portfolio-tarunpahade.vercel.app/blogs/mobile-app-developer-aurangabad",
-    siteName: "Tarun Pahade - Portfolio",
-    // images: [
-    //   {
-    //     url: "https://my-portfolio-tarunpahade.vercel.app/og-image-mobile-app-developer.png",
-    //     width: 1200,
-    //     height: 630,
-    //   },
-    //],
-    locale: "en-IN",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-//   twitter: {
-//     title: "Expert Mobile App Developer in Aurangabad | Tarun Pahade",
-//     card: "summary_large_image",
+//   openGraph: {
+//     title: "Expert Mobile App Developer in Aurangabad - Tarun Pahade",
+//     description: "Transform your ideas into powerful mobile apps. Tarun Pahade specializes in React Native and cross-platform development in Aurangabad.",
+//     url: "https://my-portfolio-tarunpahade.vercel.app/blogs/mobile-app-developer-aurangabad",
+//     siteName: "Tarun Pahade - Portfolio",
+//     // images: [
+//     //   {
+//     //     url: "https://my-portfolio-tarunpahade.vercel.app/og-image-mobile-app-developer.png",
+//     //     width: 1200,
+//     //     height: 630,
+//     //   },
+//     //],
+//     locale: "en-IN",
+//     type: "website",
 //   },
-  icons: {
-    shortcut: "/favicon.png",
-  },
+//   robots: {
+//     index: true,
+//     follow: true,
+//     googleBot: {
+//       index: true,
+//       follow: true,
+//       "max-video-preview": -1,
+//       "max-image-preview": "large",
+//       "max-snippet": -1,
+//     },
+//   },
+// //   twitter: {
+// //     title: "Expert Mobile App Developer in Aurangabad | Tarun Pahade",
+// //     card: "summary_large_image",
+// //   },
+//   icons: {
+//     shortcut: "/favicon.png",
+//   },
 };
-export function MobileAppDeveloperAurangabad  ()  {
+export default function MobileAppDeveloperAurangabad  ()  {
   return (
     <div className="p-20  mx-auto px-52 py-8 bg-white w-screen">
       <Head>
