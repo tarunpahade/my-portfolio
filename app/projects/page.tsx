@@ -38,7 +38,7 @@ export const allProjects2: Project[] = [
   {
     _id: 2,
     title: 'Finstep',
-    description: 'I was building Frontend a Neobank for age group 14-18 years. ',
+    description: 'AI Finincial application for students to learn about finance and investment',
     tech: 'React Native , Expo , Typescript , Express Node js MongoDB',
     imgUrl: 'https://projectimagestorage1.s3.ap-south-1.amazonaws.com/images/Screenshot+2024-03-20+141906.png',
     repository: 'https://github.com/tarunpahade/Frontend_Finstep',
@@ -47,9 +47,9 @@ export const allProjects2: Project[] = [
   },
   {
     _id: 3,
-    title: 'Restraunt SaaS ',
-    description: 'A restraunt SAAS integra',
-    tech: 'HTML CSS JS whatsapp Api',
+    title: 'BaristaBot ',
+    description: 'For automation of Admin tasks in a company',
+    tech: 'HTML CSS JS openai  whatsapp Api',
     imgUrl: 'https://media.licdn.com/dms/image/D4D22AQEf2F6Q1U1Nkw/feedshare-shrink_2048_1536/0/1710760724762?e=1714003200&v=beta&t=a9tOh_iYG9L8rzvy_n2Xv3rtp2dbluLkgIIV47k16M0',
     repository: 'https://github.com/tarunpahade/admin-app',
     url: 'https://admin-app-ufy2.onrender.com/dashboard/',
@@ -60,7 +60,7 @@ export const allProjects2: Project[] = [
   {
     _id: 4,
     title: 'Fitness App',
-    description: 'A fitness application for beggniers in the gym . Not Published on playstore yet',
+    description: 'A fitness application for beggniers in the gym .Developed with Expo and React Native , express hosted on render to ensure a seamless user experience across iOS, Android, and web platforms. ',
     tech: 'React Native , Typescript , Express Node js MongoDB',
     imgUrl: 'https://projectimagestorage1.s3.ap-south-1.amazonaws.com/images/Screenshot+2024-03-20+141916.png',
     repository: 'https://github.com/tarunpahade/fitness-app-v2',
